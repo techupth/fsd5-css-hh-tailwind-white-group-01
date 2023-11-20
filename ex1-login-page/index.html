@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Framework (Tailwind) Exercise 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Framework (Tailwind) Exercise 1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-  <!-- Start coding here -->
-</body>
-
+  <body>
+    <div class="container max-w-full min-h-screen bg-slate-200 flex justify-center items-center">
+      <div class="w-[308px] h-[235px] bg-white rounded-xl flex flex-col p-6">
+        <h1 class="text-lg text-zinc-600 font-medium">Login to Website</h1>
+        <form class="flex flex-col">
+          <div class="flex items-center justify-between mt-3 mr-5">
+            <label for="email" class="text-base font-semibold">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-[168px] h-[35px] p-2 border rounded hover:border-violet-300 focus:outline-none focus:border-violet-500"
+            />
+          </div>
+          <div class="flex items-center justify-between mt-4 mr-5">
+            <label for="password" class="text-base font-semibold">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="w-[168px] h-[35px] p-2 border rounded hover:border-violet-300 focus:outline-none focus:border-violet-500"
+            />
+          </div>
+          <div class="flex justify-between mt-4 gap-1">
+            <button
+              type="submit"
+              class="w-36 p-2 rounded-full bg-violet-500 text-white text-sm font-semibold active:bg-violet-600 hover:bg-violet-400 focus:ring focus:ring-violet-300"
+            >
+              Sign in
+            </button>
+            <button
+              type="submit"
+              class="w-36 p-2 rounded-full bg-white text-violet-400 text-sm font-semibold hover:bg-violet-100 focus:ring focus:ring-violet-300 focus:text-violet-600"
+            >
+              Sign Up
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
